@@ -139,45 +139,43 @@
                                         <rect key="frame" x="0.0" y="92" width="560" height="115"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jYx-gR-EoY" id="KzO-eu-UxR">
-                                            <rect key="frame" x="0.0" y="0.0" width="560" height="114.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="560" height="115"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ld7-2u-qbW">
-                                                    <rect key="frame" x="259" y="8" width="42" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FCG-NC-cqI">
+                                                    <rect key="frame" x="267" y="8" width="25" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MrJ-iR-zUD">
-                                                    <rect key="frame" x="259" y="30" width="42" height="11"/>
-                                                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ezW-JK-GqA">
+                                                    <rect key="frame" x="255" y="28" width="50" height="10"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="11" id="dD1-2p-tO9"/>
+                                                        <constraint firstAttribute="width" constant="50" id="hvH-2Q-VlB"/>
+                                                        <constraint firstAttribute="height" constant="10" id="mqm-Vj-fnW"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bijour bijour bijour bijour bijour bijour bijour bijour bijour bijourbijourbijour" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ao-fa-jru">
-                                                    <rect key="frame" x="8" y="49" width="552" height="57.5"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="552" id="Nct-fc-3X1"/>
-                                                        <constraint firstAttribute="height" constant="57.5" id="aPr-hf-68R"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ybe-7R-Dc5">
+                                                    <rect key="frame" x="0.0" y="37" width="560" height="78"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="9Ao-fa-jru" firstAttribute="top" secondItem="MrJ-iR-zUD" secondAttribute="bottom" constant="8" id="FDK-o6-BPO"/>
-                                                <constraint firstItem="9Ao-fa-jru" firstAttribute="leading" secondItem="KzO-eu-UxR" secondAttribute="leadingMargin" id="UOX-Pv-mMy"/>
-                                                <constraint firstItem="MrJ-iR-zUD" firstAttribute="top" secondItem="ld7-2u-qbW" secondAttribute="bottom" constant="1" id="aej-gG-elC"/>
-                                                <constraint firstItem="ld7-2u-qbW" firstAttribute="leading" secondItem="KzO-eu-UxR" secondAttribute="leadingMargin" constant="251" id="knO-Mr-Yuw"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="MrJ-iR-zUD" secondAttribute="trailing" constant="251" id="qzT-3X-qCr"/>
-                                                <constraint firstItem="ld7-2u-qbW" firstAttribute="top" secondItem="KzO-eu-UxR" secondAttribute="topMargin" id="s2c-6P-3lv"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="ld7-2u-qbW" secondAttribute="trailing" constant="251" id="tRa-i5-FXU"/>
-                                                <constraint firstItem="MrJ-iR-zUD" firstAttribute="leading" secondItem="KzO-eu-UxR" secondAttribute="leadingMargin" constant="251" id="uUh-Kr-mD3"/>
+                                                <constraint firstItem="FCG-NC-cqI" firstAttribute="top" secondItem="KzO-eu-UxR" secondAttribute="topMargin" id="4i1-wL-7yS"/>
+                                                <constraint firstItem="ezW-JK-GqA" firstAttribute="top" secondItem="KzO-eu-UxR" secondAttribute="topMargin" constant="20" id="7fC-Po-6Q3"/>
+                                                <constraint firstItem="ezW-JK-GqA" firstAttribute="centerX" secondItem="KzO-eu-UxR" secondAttribute="centerX" id="A1w-ps-uSQ"/>
+                                                <constraint firstItem="Ybe-7R-Dc5" firstAttribute="top" secondItem="FCG-NC-cqI" secondAttribute="bottom" constant="8" symbolic="YES" id="FGO-gi-fOC"/>
+                                                <constraint firstItem="Ybe-7R-Dc5" firstAttribute="leading" secondItem="KzO-eu-UxR" secondAttribute="leadingMargin" constant="-8" id="drT-bz-wQd"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Ybe-7R-Dc5" secondAttribute="trailing" constant="-8" id="hqZ-HB-Lln"/>
+                                                <constraint firstItem="FCG-NC-cqI" firstAttribute="centerX" secondItem="KzO-eu-UxR" secondAttribute="centerX" id="jXw-ZD-fTc"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Ybe-7R-Dc5" secondAttribute="bottom" constant="-8" id="xav-6t-oDd"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
