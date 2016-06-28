@@ -136,7 +136,7 @@
                                 <rect key="frame" x="0.0" y="64" width="600" height="486"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="me_cell" rowHeight="115" id="jYx-gR-EoY" customClass="SettingsTableViewCell" customModule="style_shaker" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="me_cell" rowHeight="115" id="jYx-gR-EoY">
                                         <rect key="frame" x="0.0" y="92" width="600" height="115"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jYx-gR-EoY" id="KzO-eu-UxR">
