@@ -17,6 +17,7 @@ class MonMoodViewController: UIViewController, UITableViewDelegate, UITableViewD
     override func viewDidLoad() {
         super.viewDidLoad()
         tableview.dataSource = self
+        tableview.delegate = self
         // Do any additional setup after loading the view.
     }
 
