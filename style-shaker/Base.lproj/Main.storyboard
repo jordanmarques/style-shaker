@@ -139,7 +139,7 @@
                                         <rect key="frame" x="0.0" y="92" width="560" height="115"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jYx-gR-EoY" id="KzO-eu-UxR">
-                                            <rect key="frame" x="0.0" y="0.0" width="560" height="115"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="560" height="114.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FCG-NC-cqI">
@@ -178,6 +178,63 @@
                                                 <constraint firstAttribute="bottomMargin" secondItem="Ybe-7R-Dc5" secondAttribute="bottom" constant="-8" id="xav-6t-oDd"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="me_custom_cell" id="k6K-vg-SQW" customClass="MyMeTableViewCell" customModule="style_shaker" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="207" width="560" height="115"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="k6K-vg-SQW" id="6ws-Uv-y4j">
+                                            <rect key="frame" x="0.0" y="0.0" width="560" height="114.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbU-nV-pnk">
+                                                    <rect key="frame" x="263" y="8" width="34" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tea-s0-jLt">
+                                                    <rect key="frame" x="256" y="42" width="51" height="31"/>
+                                                </switch>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="26b-6j-ESd">
+                                                    <rect key="frame" x="475" y="47" width="57" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zhy-jh-79i">
+                                                    <rect key="frame" x="28" y="46" width="54" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="tea-s0-jLt" firstAttribute="leading" secondItem="Zhy-jh-79i" secondAttribute="trailing" constant="50" id="0bO-zd-a1Q"/>
+                                                <constraint firstItem="tea-s0-jLt" firstAttribute="centerY" secondItem="6ws-Uv-y4j" secondAttribute="centerY" id="8j7-Ct-Bxz"/>
+                                                <constraint firstItem="26b-6j-ESd" firstAttribute="centerY" secondItem="6ws-Uv-y4j" secondAttribute="centerY" id="Bla-WZ-hDM"/>
+                                                <constraint firstItem="26b-6j-ESd" firstAttribute="leading" secondItem="tea-s0-jLt" secondAttribute="trailing" constant="50" id="FRX-ms-qbQ"/>
+                                                <constraint firstItem="tea-s0-jLt" firstAttribute="centerX" secondItem="6ws-Uv-y4j" secondAttribute="centerX" id="Fxu-pL-ghl"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="26b-6j-ESd" secondAttribute="trailing" constant="77" id="MNi-nd-ZJx"/>
+                                                <constraint firstItem="lbU-nV-pnk" firstAttribute="top" secondItem="6ws-Uv-y4j" secondAttribute="topMargin" id="PrY-Mz-ftY"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="26b-6j-ESd" secondAttribute="trailing" constant="20" id="U21-L0-yFP"/>
+                                                <constraint firstItem="Zhy-jh-79i" firstAttribute="leading" secondItem="6ws-Uv-y4j" secondAttribute="leadingMargin" constant="20" id="ftB-QM-Ebq"/>
+                                                <constraint firstItem="Zhy-jh-79i" firstAttribute="centerY" secondItem="6ws-Uv-y4j" secondAttribute="centerY" id="v7m-re-wki"/>
+                                                <constraint firstItem="lbU-nV-pnk" firstAttribute="centerX" secondItem="6ws-Uv-y4j" secondAttribute="centerX" id="yDP-z0-OHl"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="0bO-zd-a1Q"/>
+                                                    <exclude reference="FRX-ms-qbQ"/>
+                                                    <exclude reference="MNi-nd-ZJx"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="cellswitch" destination="tea-s0-jLt" id="c1s-xB-2PW"/>
+                                            <outlet property="lblLeft" destination="Zhy-jh-79i" id="28F-I5-Fg6"/>
+                                            <outlet property="lblRight" destination="26b-6j-ESd" id="eiG-w8-Ljh"/>
+                                            <outlet property="title" destination="lbU-nV-pnk" id="v0s-YG-M8l"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
