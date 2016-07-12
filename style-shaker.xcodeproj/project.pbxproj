@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		74342CF71D354B9400EE9E4A /* MonStyleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74342CF61D354B9400EE9E4A /* MonStyleViewController.swift */; };
+		74342CF91D354DF400EE9E4A /* MonStyleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74342CF81D354DF400EE9E4A /* MonStyleTableViewCell.swift */; };
 		743CB5551D22A5B00067BC08 /* MyMeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743CB5541D22A5B00067BC08 /* MyMeTableViewCell.swift */; };
 		743CB5571D22B7360067BC08 /* MonMoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743CB5561D22B7360067BC08 /* MonMoodTableViewCell.swift */; };
 		743CB5591D22BCFE0067BC08 /* MonMoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743CB5581D22BCFE0067BC08 /* MonMoodViewController.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		74342CF61D354B9400EE9E4A /* MonStyleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonStyleViewController.swift; sourceTree = "<group>"; };
+		74342CF81D354DF400EE9E4A /* MonStyleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MonStyleTableViewCell.swift; path = ../MonStyleTableViewCell.swift; sourceTree = "<group>"; };
 		743CB5541D22A5B00067BC08 /* MyMeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyMeTableViewCell.swift; sourceTree = "<group>"; };
 		743CB5561D22B7360067BC08 /* MonMoodTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonMoodTableViewCell.swift; sourceTree = "<group>"; };
 		743CB5581D22BCFE0067BC08 /* MonMoodViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonMoodViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +73,8 @@
 				743CB5541D22A5B00067BC08 /* MyMeTableViewCell.swift */,
 				743CB5561D22B7360067BC08 /* MonMoodTableViewCell.swift */,
 				743CB5581D22BCFE0067BC08 /* MonMoodViewController.swift */,
+				74342CF81D354DF400EE9E4A /* MonStyleTableViewCell.swift */,
+				74342CF61D354B9400EE9E4A /* MonStyleViewController.swift */,
 			);
 			path = "style-shaker";
 			sourceTree = "<group>";
@@ -145,6 +151,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				743CB5551D22A5B00067BC08 /* MyMeTableViewCell.swift in Sources */,
+				74342CF71D354B9400EE9E4A /* MonStyleViewController.swift in Sources */,
+				74342CF91D354DF400EE9E4A /* MonStyleTableViewCell.swift in Sources */,
 				743CB5571D22B7360067BC08 /* MonMoodTableViewCell.swift in Sources */,
 				74D4C0971D072D1A0010CD75 /* AppDelegate.swift in Sources */,
 				746FBF401D0817800043F361 /* SettingsViewController.swift in Sources */,

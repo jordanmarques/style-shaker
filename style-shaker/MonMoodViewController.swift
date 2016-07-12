@@ -11,7 +11,7 @@ import UIKit
 class MonMoodViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     @IBOutlet weak var tableview: UITableView!
-    let MON_MOOD_CELL:String = "mon_mood_cell"
+    let MON_MOOD_CELL = "mon_mood_cell"
     let MON_MOOD_CUSTOM_CELL = "mon_mood_custom_cell"
 
     override func viewDidLoad() {
