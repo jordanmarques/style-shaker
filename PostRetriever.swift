@@ -42,6 +42,7 @@ class PostRetriever: NSObject{
                     )
                     
                     posts.append(post);
+                    print("append")
                 }
             }
             catch {

@@ -13,6 +13,8 @@ class MonStyleViewController: UIViewController, UITableViewDelegate, UITableView
    
     @IBOutlet weak var tableview: UITableView!
     let MON_STYLE_CUSTOM_CELL = "mon_style_custom_cell"
+    let STYLE_TO_DETAIL = "StyleToDetail"
+    var posts: [Post] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,15 +30,15 @@ class MonStyleViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return self.posts.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let customCell: MonStyleTableViewCell = tableView.dequeueReusableCellWithIdentifier(MON_STYLE_CUSTOM_CELL) as! MonStyleTableViewCell
         
-        customCell.title.text = "TOWTOW"
+        customCell.title.text = self.posts[indexPath.row].title
             
-        if let url = NSURL(string: "https://media.giphy.com/media/A5rJNwieM99CM/giphy.gif") {
+        if let url = NSURL(string: self.posts[indexPath.row].thumbnail) {
             if let data = NSData(contentsOfURL: url) {
                 customCell.cellImage.image = UIImage(data: data)
             }        

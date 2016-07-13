@@ -425,7 +425,7 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="gbe-YO-gai" kind="show" id="Mpd-eU-F9a"/>
+                                    <action selector="validateBtnAction:" destination="SSu-id-vrV" eventType="touchUpInside" id="mSs-KK-mzz"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -442,11 +442,12 @@
                     </view>
                     <connections>
                         <outlet property="tableview" destination="5wc-fj-QCY" id="GLW-H7-hoo"/>
+                        <segue destination="gbe-YO-gai" kind="show" identifier="MoodToStyle" id="AVE-ct-Dnz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bhy-Y7-trD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2035" y="870"/>
+            <point key="canvasLocation" x="2021" y="878"/>
         </scene>
         <!--Mon Style View Controller-->
         <scene sceneID="7Ya-Uc-34F">

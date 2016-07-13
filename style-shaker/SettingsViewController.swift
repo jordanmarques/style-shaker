@@ -18,10 +18,6 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         super.viewDidLoad()
         tableview.dataSource = self
         
-        let postRetriever: PostRetriever = PostRetriever()
-        
-        var posts:[Post] = postRetriever.retrieve()
-        
     }
 
     override func didReceiveMemoryWarning() {
