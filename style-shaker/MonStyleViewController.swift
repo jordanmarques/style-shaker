@@ -15,6 +15,7 @@ class MonStyleViewController: UIViewController, UITableViewDelegate, UITableView
     let MON_STYLE_CUSTOM_CELL = "mon_style_custom_cell"
     let STYLE_TO_DETAIL = "StyleToDetail"
     var posts: [Post] = []
+    var indexSelected: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +34,13 @@ class MonStyleViewController: UIViewController, UITableViewDelegate, UITableView
         return self.posts.count
     }
     
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        indexSelected = indexPath.row
+        self.performSegueWithIdentifier(STYLE_TO_DETAIL, sender: self.posts[indexSelected])
+        
+    }
+
+    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let customCell: MonStyleTableViewCell = tableView.dequeueReusableCellWithIdentifier(MON_STYLE_CUSTOM_CELL) as! MonStyleTableViewCell
         
@@ -45,6 +53,12 @@ class MonStyleViewController: UIViewController, UITableViewDelegate, UITableView
         }
         
         return customCell
+        
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let controller: DetailViewController = segue.destinationViewController as! DetailViewController
+        controller.post = self.posts[indexSelected]
         
     }
     

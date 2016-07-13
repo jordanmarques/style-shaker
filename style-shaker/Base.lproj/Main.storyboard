@@ -620,11 +620,12 @@
                     </view>
                     <connections>
                         <outlet property="tableview" destination="NVu-jx-MtK" id="Sg5-7w-ylJ"/>
+                        <segue destination="CCk-eQ-eW4" kind="show" identifier="StyleToDetail" id="5dq-eg-uvR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fmr-Z0-wN5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2828" y="870"/>
+            <point key="canvasLocation" x="2882" y="912"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="mqi-qo-hEB">

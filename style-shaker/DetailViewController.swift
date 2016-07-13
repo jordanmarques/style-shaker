@@ -14,8 +14,12 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var longTitle: UILabel!
     @IBOutlet weak var detailDescritpion: UILabel!
     
+    var post: Post = Post()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        longTitle.text = post.title
+        detailDescritpion.text = post.about
 
         // Do any additional setup after loading the view.
     }
