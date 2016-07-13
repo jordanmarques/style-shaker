@@ -14,6 +14,8 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var longTitle: UILabel!
     @IBOutlet weak var detailDescritpion: UILabel!
     
+    let DETAIL_TO_WEB = "DetailToWeb"
+    
     var post: Post = Post()
     
     override func viewDidLoad() {
@@ -30,6 +32,18 @@ class DetailViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func buyBtnAction(sender: AnyObject) {
+        self.performSegueWithIdentifier(DETAIL_TO_WEB, sender: post.title)
+
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let controller: WebViewController = segue.destinationViewController as! WebViewController
+        controller.request = post.title
+        
+    }
+
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

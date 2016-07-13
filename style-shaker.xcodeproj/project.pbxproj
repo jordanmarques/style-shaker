@@ -15,6 +15,7 @@
 		743CB5591D22BCFE0067BC08 /* MonMoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743CB5581D22BCFE0067BC08 /* MonMoodViewController.swift */; };
 		746FBF401D0817800043F361 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746FBF3F1D0817800043F361 /* SettingsViewController.swift */; };
 		74992E771D369A1A0032A35F /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74992E761D369A1A0032A35F /* Post.swift */; };
+		74992E7E1D36DC710032A35F /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74992E7D1D36DC710032A35F /* WebViewController.swift */; };
 		74D4C0971D072D1A0010CD75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D4C0961D072D1A0010CD75 /* AppDelegate.swift */; };
 		74D4C09C1D072D1A0010CD75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74D4C09A1D072D1A0010CD75 /* Main.storyboard */; };
 		74D4C09E1D072D1A0010CD75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74D4C09D1D072D1A0010CD75 /* Assets.xcassets */; };
@@ -30,6 +31,7 @@
 		743CB5581D22BCFE0067BC08 /* MonMoodViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MonMoodViewController.swift; path = "style-shaker/MonMoodViewController.swift"; sourceTree = "<group>"; };
 		746FBF3F1D0817800043F361 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = "style-shaker/SettingsViewController.swift"; sourceTree = "<group>"; };
 		74992E761D369A1A0032A35F /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		74992E7D1D36DC710032A35F /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		74D4C0931D072D1A0010CD75 /* style-shaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "style-shaker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74D4C0961D072D1A0010CD75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74D4C09B1D072D1A0010CD75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 				74342CF61D354B9400EE9E4A /* MonStyleViewController.swift */,
 				74342CFB1D3584D300EE9E4A /* DetailViewController.swift */,
 				746FBF3F1D0817800043F361 /* SettingsViewController.swift */,
+				74992E7D1D36DC710032A35F /* WebViewController.swift */,
 			);
 			name = controllers;
 			path = ..;
@@ -186,6 +189,7 @@
 				743CB5551D22A5B00067BC08 /* MyMeTableViewCell.swift in Sources */,
 				74342CF71D354B9400EE9E4A /* MonStyleViewController.swift in Sources */,
 				74342CF91D354DF400EE9E4A /* MonStyleTableViewCell.swift in Sources */,
+				74992E7E1D36DC710032A35F /* WebViewController.swift in Sources */,
 				743CB5571D22B7360067BC08 /* MonMoodTableViewCell.swift in Sources */,
 				74D4C0971D072D1A0010CD75 /* AppDelegate.swift in Sources */,
 				746FBF401D0817800043F361 /* SettingsViewController.swift in Sources */,
