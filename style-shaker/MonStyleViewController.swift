@@ -38,7 +38,7 @@ class MonStyleViewController: UIViewController, UITableViewDelegate, UITableView
         
         customCell.title.text = self.posts[indexPath.row].title
             
-        if let url = NSURL(string: self.posts[indexPath.row].thumbnail) {
+        if let url = NSURL(string: self.posts[indexPath.row].picture) {
             if let data = NSData(contentsOfURL: url) {
                 customCell.cellImage.image = UIImage(data: data)
             }        

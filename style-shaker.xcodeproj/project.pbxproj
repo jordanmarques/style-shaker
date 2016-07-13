@@ -15,7 +15,6 @@
 		743CB5591D22BCFE0067BC08 /* MonMoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743CB5581D22BCFE0067BC08 /* MonMoodViewController.swift */; };
 		746FBF401D0817800043F361 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746FBF3F1D0817800043F361 /* SettingsViewController.swift */; };
 		74992E771D369A1A0032A35F /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74992E761D369A1A0032A35F /* Post.swift */; };
-		74992E7C1D369B6A0032A35F /* PostRetriever.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74992E7B1D369B6A0032A35F /* PostRetriever.swift */; };
 		74D4C0971D072D1A0010CD75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D4C0961D072D1A0010CD75 /* AppDelegate.swift */; };
 		74D4C09C1D072D1A0010CD75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74D4C09A1D072D1A0010CD75 /* Main.storyboard */; };
 		74D4C09E1D072D1A0010CD75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74D4C09D1D072D1A0010CD75 /* Assets.xcassets */; };
@@ -31,7 +30,6 @@
 		743CB5581D22BCFE0067BC08 /* MonMoodViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MonMoodViewController.swift; path = "style-shaker/MonMoodViewController.swift"; sourceTree = "<group>"; };
 		746FBF3F1D0817800043F361 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = "style-shaker/SettingsViewController.swift"; sourceTree = "<group>"; };
 		74992E761D369A1A0032A35F /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
-		74992E7B1D369B6A0032A35F /* PostRetriever.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostRetriever.swift; sourceTree = "<group>"; };
 		74D4C0931D072D1A0010CD75 /* style-shaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "style-shaker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74D4C0961D072D1A0010CD75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74D4C09B1D072D1A0010CD75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -83,15 +81,6 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
-		74992E7A1D369ABF0032A35F /* utils */ = {
-			isa = PBXGroup;
-			children = (
-				74992E7B1D369B6A0032A35F /* PostRetriever.swift */,
-			);
-			name = utils;
-			path = ..;
-			sourceTree = "<group>";
-		};
 		74D4C08A1D072D1A0010CD75 = {
 			isa = PBXGroup;
 			children = (
@@ -111,7 +100,6 @@
 		74D4C0951D072D1A0010CD75 /* style-shaker */ = {
 			isa = PBXGroup;
 			children = (
-				74992E7A1D369ABF0032A35F /* utils */,
 				74992E791D369AA50032A35F /* custom-cells */,
 				74992E781D369A5C0032A35F /* controllers */,
 				74992E751D369A080032A35F /* model */,
@@ -195,7 +183,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74992E7C1D369B6A0032A35F /* PostRetriever.swift in Sources */,
 				743CB5551D22A5B00067BC08 /* MyMeTableViewCell.swift in Sources */,
 				74342CF71D354B9400EE9E4A /* MonStyleViewController.swift in Sources */,
 				74342CF91D354DF400EE9E4A /* MonStyleTableViewCell.swift in Sources */,

@@ -105,7 +105,6 @@ class MonMoodViewController: UIViewController, UITableViewDelegate, UITableViewD
                     )
                     
                     self.posts.append(post);
-                    print("append")
                 }
             }
             catch {

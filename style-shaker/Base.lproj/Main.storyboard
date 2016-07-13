@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -495,39 +496,70 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iq1-1d-bYc">
-                                                    <rect key="frame" x="125" y="8" width="350" height="100"/>
+                                                    <rect key="frame" x="8" y="0.0" width="300" height="178.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="100" id="3Xu-TQ-EMx"/>
                                                         <constraint firstAttribute="width" constant="240" id="5ZR-6p-8zy"/>
                                                         <constraint firstAttribute="height" constant="100" id="8tR-Sl-Ip7"/>
+                                                        <constraint firstAttribute="height" constant="320" id="guJ-kc-wv3"/>
+                                                        <constraint firstAttribute="width" constant="320" id="hiC-6Q-YI0"/>
                                                         <constraint firstAttribute="width" constant="350" id="p2X-3t-C78"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="320" id="yAw-Gd-2ue"/>
                                                     </constraints>
                                                     <variation key="default">
                                                         <mask key="constraints">
+                                                            <exclude reference="3Xu-TQ-EMx"/>
                                                             <exclude reference="5ZR-6p-8zy"/>
                                                             <exclude reference="8tR-Sl-Ip7"/>
+                                                            <exclude reference="guJ-kc-wv3"/>
+                                                            <exclude reference="hiC-6Q-YI0"/>
+                                                            <exclude reference="p2X-3t-C78"/>
+                                                            <exclude reference="yAw-Gd-2ue"/>
                                                         </mask>
                                                     </variation>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vcX-ZU-LjX">
-                                                    <rect key="frame" x="125" y="130" width="350" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vcX-ZU-LjX">
+                                                    <rect key="frame" x="342" y="79" width="240" height="21"/>
                                                     <color key="backgroundColor" red="0.78839583329999996" green="0.78839583329999996" blue="0.78839583329999996" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="300" id="8MB-Bq-TXO"/>
+                                                    </constraints>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="Label">
+                                                            <attributes>
+                                                                <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
                                                     <nil key="highlightedColor"/>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="8MB-Bq-TXO"/>
+                                                        </mask>
+                                                    </variation>
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="iq1-1d-bYc" firstAttribute="width" secondItem="GWJ-uX-hIp" secondAttribute="width" multiplier="0.5" id="3wz-bB-X18"/>
                                                 <constraint firstItem="iq1-1d-bYc" firstAttribute="top" secondItem="GWJ-uX-hIp" secondAttribute="topMargin" id="5qu-i4-Z0W"/>
                                                 <constraint firstItem="iq1-1d-bYc" firstAttribute="centerY" secondItem="GWJ-uX-hIp" secondAttribute="centerY" id="7GM-tx-6CX"/>
+                                                <constraint firstItem="vcX-ZU-LjX" firstAttribute="centerY" secondItem="GWJ-uX-hIp" secondAttribute="centerY" id="AiE-gm-pY4"/>
+                                                <constraint firstItem="vcX-ZU-LjX" firstAttribute="height" secondItem="GWJ-uX-hIp" secondAttribute="height" id="Gas-1z-9IC"/>
                                                 <constraint firstItem="iq1-1d-bYc" firstAttribute="centerY" secondItem="GWJ-uX-hIp" secondAttribute="centerY" id="HvN-dK-E8w"/>
                                                 <constraint firstItem="iq1-1d-bYc" firstAttribute="centerX" secondItem="GWJ-uX-hIp" secondAttribute="centerX" id="KyD-2F-DUx"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="vcX-ZU-LjX" secondAttribute="trailing" constant="10" id="M9M-WD-gqx"/>
                                                 <constraint firstItem="iq1-1d-bYc" firstAttribute="top" secondItem="GWJ-uX-hIp" secondAttribute="topMargin" id="S4i-yh-p9c"/>
+                                                <constraint firstItem="vcX-ZU-LjX" firstAttribute="width" secondItem="GWJ-uX-hIp" secondAttribute="width" multiplier="0.4" id="SbY-nC-m4E"/>
                                                 <constraint firstItem="vcX-ZU-LjX" firstAttribute="width" secondItem="iq1-1d-bYc" secondAttribute="width" id="Yz6-hi-KY8"/>
+                                                <constraint firstItem="iq1-1d-bYc" firstAttribute="height" secondItem="GWJ-uX-hIp" secondAttribute="height" id="a6c-y5-THS"/>
                                                 <constraint firstItem="vcX-ZU-LjX" firstAttribute="centerX" secondItem="GWJ-uX-hIp" secondAttribute="centerX" id="crV-CY-4gK"/>
                                                 <constraint firstItem="iq1-1d-bYc" firstAttribute="centerY" secondItem="GWJ-uX-hIp" secondAttribute="centerY" id="gCd-Wm-TeP"/>
+                                                <constraint firstItem="iq1-1d-bYc" firstAttribute="leading" secondItem="GWJ-uX-hIp" secondAttribute="leadingMargin" id="gDK-DC-QKa"/>
                                                 <constraint firstItem="iq1-1d-bYc" firstAttribute="top" secondItem="GWJ-uX-hIp" secondAttribute="topMargin" id="k1Z-kU-nOx"/>
                                                 <constraint firstItem="iq1-1d-bYc" firstAttribute="centerX" secondItem="GWJ-uX-hIp" secondAttribute="centerX" id="nve-2N-jpI"/>
+                                                <constraint firstItem="iq1-1d-bYc" firstAttribute="centerY" secondItem="GWJ-uX-hIp" secondAttribute="centerY" id="oLm-QG-j4u"/>
                                                 <constraint firstItem="vcX-ZU-LjX" firstAttribute="top" secondItem="iq1-1d-bYc" secondAttribute="bottom" constant="22" id="yVd-8I-C4s"/>
                                             </constraints>
                                             <variation key="default">
@@ -535,9 +567,15 @@
                                                     <exclude reference="5qu-i4-Z0W"/>
                                                     <exclude reference="7GM-tx-6CX"/>
                                                     <exclude reference="HvN-dK-E8w"/>
+                                                    <exclude reference="KyD-2F-DUx"/>
                                                     <exclude reference="S4i-yh-p9c"/>
                                                     <exclude reference="gCd-Wm-TeP"/>
+                                                    <exclude reference="k1Z-kU-nOx"/>
                                                     <exclude reference="nve-2N-jpI"/>
+                                                    <exclude reference="Gas-1z-9IC"/>
+                                                    <exclude reference="Yz6-hi-KY8"/>
+                                                    <exclude reference="crV-CY-4gK"/>
+                                                    <exclude reference="yVd-8I-C4s"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
