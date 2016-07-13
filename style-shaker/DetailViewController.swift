@@ -20,6 +20,12 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         longTitle.text = post.title
         detailDescritpion.text = post.about
+        
+        if let url = NSURL(string: self.post.picture) {
+            if let data = NSData(contentsOfURL: url) {
+                detailImage.image = UIImage(data: data)
+            }
+        }
 
         // Do any additional setup after loading the view.
     }

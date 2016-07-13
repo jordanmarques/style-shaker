@@ -620,7 +620,7 @@
                     </view>
                     <connections>
                         <outlet property="tableview" destination="NVu-jx-MtK" id="Sg5-7w-ylJ"/>
-                        <segue destination="CCk-eQ-eW4" kind="show" identifier="StyleToDetail" id="5dq-eg-uvR"/>
+                        <segue destination="CCk-eQ-eW4" kind="show" identifier="StyleToDetail" id="1uv-xL-XSq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fmr-Z0-wN5" userLabel="First Responder" sceneMemberID="firstResponder"/>
