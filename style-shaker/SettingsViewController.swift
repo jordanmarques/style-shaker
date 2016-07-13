@@ -17,7 +17,11 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
         tableview.dataSource = self
-        // Do any additional setup after loading the view.
+        
+        let postRetriever: PostRetriever = PostRetriever()
+        
+        var posts:[Post] = postRetriever.retrieve()
+        
     }
 
     override func didReceiveMemoryWarning() {
