@@ -19,6 +19,7 @@ class MonMoodViewController: UIViewController, UITableViewDelegate, UITableViewD
     let WEEKEND: Int = 3
     let CHILL: Int = 4
     var posts: [Post] = []
+    var retrievedPosts: [Post] = []
     var settings: UserSettings = UserSettings()
 
     override func viewDidLoad() {
@@ -37,6 +38,7 @@ class MonMoodViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     @IBAction func validateBtnAction(sender: AnyObject) {
+        sortPosts();
         self.performSegueWithIdentifier(MOOD_TO_STYLE, sender: self.posts)
     }
     
@@ -109,6 +111,78 @@ class MonMoodViewController: UIViewController, UITableViewDelegate, UITableViewD
             return customCell
         }
     }
+    
+    func sortPosts(){
+        for (_, post) in self.retrievedPosts.enumerate() {
+            if(asGoodCriteria(post)){
+                posts.append(post)
+            }
+        }
+    }
+    
+    func asGoodCriteria(post: Post) -> Bool{
+        
+        if( !(post.party == settings.party && post.weekend == settings.weekend && post.chill == settings.chill && post.work == settings.work )){
+            return false;
+        }
+        
+        if(post.male == true && post.female == true){
+            if(!(settings.male == true || settings.female == true)){
+                return false
+            }
+        }else{
+            if(post.male == true) {
+                if(settings.male != true){
+                    return false
+                }
+            }
+            if(post.female == true) {
+                if(settings.female != true){
+                    return false
+                }
+            }
+        }
+        
+        if(post.hairDark == true && post.hairBright == true){
+            if(!(settings.hairDark == true || settings.hairBright == true)){
+                return false;
+            }
+        } else {
+            if(post.hairDark == true) {
+                if(settings.hairDark != true){
+                    return false
+                }
+            }
+            
+            if(post.hairBright == true) {
+                if(settings.hairBright != true){
+                    return false
+                }
+            }
+        }
+        
+        
+        if(post.skinBright == true && post.skinDark == true){
+            if(!(settings.skinBright == true || settings.skinDark == true)){
+                return false;
+            }
+        } else{
+            if(post.skinDark == true) {
+                if(settings.skinDark != true){
+                    return false
+                }
+            }
+            
+            if(post.skinBright == true) {
+                if(settings.skinBright != true){
+                    return false
+                }
+            }
+        }
+        
+        return true;
+       
+    }
 
     func retrieve(){
         let API_ENDPOINT: NSURL = NSURL(string: "http://163.172.27.134/api/products")!
@@ -136,7 +210,7 @@ class MonMoodViewController: UIViewController, UITableViewDelegate, UITableViewD
                                           id: item["id"] as! String
                     )
                     
-                    self.posts.append(post);
+                    self.retrievedPosts.append(post);
                 }
             }
             catch {
