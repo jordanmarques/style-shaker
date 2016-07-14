@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		74117A181D37CBFB00C63982 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74117A171D37CBFB00C63982 /* UserSettings.swift */; };
 		74342CF71D354B9400EE9E4A /* MonStyleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74342CF61D354B9400EE9E4A /* MonStyleViewController.swift */; };
 		74342CF91D354DF400EE9E4A /* MonStyleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74342CF81D354DF400EE9E4A /* MonStyleTableViewCell.swift */; };
 		74342CFC1D3584D300EE9E4A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74342CFB1D3584D300EE9E4A /* DetailViewController.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		74117A171D37CBFB00C63982 /* UserSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
 		74342CF61D354B9400EE9E4A /* MonStyleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MonStyleViewController.swift; path = "style-shaker/MonStyleViewController.swift"; sourceTree = "<group>"; };
 		74342CF81D354DF400EE9E4A /* MonStyleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonStyleTableViewCell.swift; sourceTree = "<group>"; };
 		74342CFB1D3584D300EE9E4A /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = "style-shaker/DetailViewController.swift"; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				74992E761D369A1A0032A35F /* Post.swift */,
+				74117A171D37CBFB00C63982 /* UserSettings.swift */,
 			);
 			name = model;
 			path = ..;
@@ -196,6 +199,7 @@
 				74992E771D369A1A0032A35F /* Post.swift in Sources */,
 				743CB5591D22BCFE0067BC08 /* MonMoodViewController.swift in Sources */,
 				74342CFC1D3584D300EE9E4A /* DetailViewController.swift in Sources */,
+				74117A181D37CBFB00C63982 /* UserSettings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,7 +14,12 @@ class MonMoodViewController: UIViewController, UITableViewDelegate, UITableViewD
     let MON_MOOD_CELL = "mon_mood_cell"
     let MON_MOOD_CUSTOM_CELL = "mon_mood_custom_cell"
     let MOOD_TO_STYLE = "MoodToStyle"
+    let WORK: Int = 1
+    let PARTY: Int = 2
+    let WEEKEND: Int = 3
+    let CHILL: Int = 4
     var posts: [Post] = []
+    var settings: UserSettings = UserSettings()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,6 +58,29 @@ class MonMoodViewController: UIViewController, UITableViewDelegate, UITableViewD
         
     }
 
+    @IBAction func switchAction(sender: AnyObject) {
+        let clickedSwitch: UISwitch = sender as! UISwitch
+
+        switch clickedSwitch.tag{
+        case WORK:
+            self.settings.work = clickedSwitch.on
+            break
+        
+        case PARTY:
+            self.settings.party = clickedSwitch.on
+            break
+            
+        case WEEKEND:
+            self.settings.weekend = clickedSwitch.on
+            break
+            
+        case CHILL:
+            self.settings.chill = clickedSwitch.on
+            break
+            
+        default: break
+        }
+    }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let customCell: MonMoodTableViewCell = tableView.dequeueReusableCellWithIdentifier(MON_MOOD_CUSTOM_CELL) as! MonMoodTableViewCell
@@ -63,15 +91,19 @@ class MonMoodViewController: UIViewController, UITableViewDelegate, UITableViewD
             return cell
         case 1:
             customCell.title.text = "Tavail"
+            customCell.cellswitch.tag = WORK
             return customCell
         case 2:
             customCell.title.text = "Soirée"
+            customCell.cellswitch.tag = PARTY
             return customCell
         case 3:
             customCell.title.text = "Week-End"
+            customCell.cellswitch.tag = WEEKEND
             return customCell
         case 4:
             customCell.title.text = "Chill"
+            customCell.cellswitch.tag = CHILL
             return customCell
         default:
             return customCell

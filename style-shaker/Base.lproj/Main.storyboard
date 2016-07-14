@@ -196,6 +196,9 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tea-s0-jLt">
                                                     <rect key="frame" x="275" y="42" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="switchAction:" destination="zqe-3j-cGV" eventType="valueChanged" id="35p-Ls-TIi"/>
+                                                    </connections>
                                                 </switch>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="26b-6j-ESd">
                                                     <rect key="frame" x="515" y="47" width="57" height="21"/>
@@ -256,7 +259,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <segue destination="SSu-id-vrV" kind="show" id="H5V-As-gbo"/>
+                                    <action selector="validateAction:" destination="zqe-3j-cGV" eventType="touchUpInside" id="WW5-oX-gSg"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -300,6 +303,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableview" destination="Cl2-k3-6F9" id="Ahe-gf-tkQ"/>
+                        <segue destination="SSu-id-vrV" kind="show" identifier="settings_to_mood" id="UG4-3r-JuA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bhx-h7-kLg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -400,6 +404,9 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c8G-kA-JWm">
                                                     <rect key="frame" x="276" y="62" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="switchAction:" destination="SSu-id-vrV" eventType="valueChanged" id="Kb0-Dn-T8T"/>
+                                                    </connections>
                                                 </switch>
                                             </subviews>
                                             <constraints>
