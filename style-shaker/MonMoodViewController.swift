@@ -21,11 +21,13 @@ class MonMoodViewController: UIViewController, UITableViewDelegate, UITableViewD
     var posts: [Post] = []
     var retrievedPosts: [Post] = []
     var settings: UserSettings = UserSettings()
+    let userDefaults = NSUserDefaults.standardUserDefaults()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         tableview.dataSource = self
         tableview.delegate = self
+
         
         retrieve()
 
@@ -38,6 +40,7 @@ class MonMoodViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     @IBAction func validateBtnAction(sender: AnyObject) {
+        
         sortPosts();
         self.performSegueWithIdentifier(MOOD_TO_STYLE, sender: self.posts)
     }
@@ -187,6 +190,14 @@ class MonMoodViewController: UIViewController, UITableViewDelegate, UITableViewD
     func retrieve(){
         let API_ENDPOINT: NSURL = NSURL(string: "http://163.172.27.134/api/products")!
         
+        var posts:[Post] = []
+        
+        if(NetworkAvailability.isAvailable() == false){
+            
+            self.retrievedPosts = posts
+            return
+        }
+        
         let task = NSURLSession.sharedSession().dataTaskWithURL(API_ENDPOINT) { (data, response, error) in
             do {
                 let json = try NSJSONSerialization.JSONObjectWithData(data!, options: .AllowFragments)
@@ -211,13 +222,13 @@ class MonMoodViewController: UIViewController, UITableViewDelegate, UITableViewD
                     )
                     
                     self.retrievedPosts.append(post);
+                    
                 }
             }
             catch {
                 print("Error while serialization");
             }
         }
-        
         task.resume()
     }
     

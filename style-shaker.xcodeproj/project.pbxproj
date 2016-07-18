@@ -15,6 +15,7 @@
 		743CB5571D22B7360067BC08 /* MonMoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743CB5561D22B7360067BC08 /* MonMoodTableViewCell.swift */; };
 		743CB5591D22BCFE0067BC08 /* MonMoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743CB5581D22BCFE0067BC08 /* MonMoodViewController.swift */; };
 		746FBF401D0817800043F361 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746FBF3F1D0817800043F361 /* SettingsViewController.swift */; };
+		748D7E7C1D3CF448000645DB /* NetworkAvailability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748D7E7B1D3CF448000645DB /* NetworkAvailability.swift */; };
 		74992E771D369A1A0032A35F /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74992E761D369A1A0032A35F /* Post.swift */; };
 		74992E7E1D36DC710032A35F /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74992E7D1D36DC710032A35F /* WebViewController.swift */; };
 		74D4C0971D072D1A0010CD75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D4C0961D072D1A0010CD75 /* AppDelegate.swift */; };
@@ -32,6 +33,7 @@
 		743CB5561D22B7360067BC08 /* MonMoodTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MonMoodTableViewCell.swift; path = "style-shaker/MonMoodTableViewCell.swift"; sourceTree = "<group>"; };
 		743CB5581D22BCFE0067BC08 /* MonMoodViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MonMoodViewController.swift; path = "style-shaker/MonMoodViewController.swift"; sourceTree = "<group>"; };
 		746FBF3F1D0817800043F361 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = "style-shaker/SettingsViewController.swift"; sourceTree = "<group>"; };
+		748D7E7B1D3CF448000645DB /* NetworkAvailability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkAvailability.swift; sourceTree = "<group>"; };
 		74992E761D369A1A0032A35F /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		74992E7D1D36DC710032A35F /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		74D4C0931D072D1A0010CD75 /* style-shaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "style-shaker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +55,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		748D7E7A1D3CF432000645DB /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				748D7E7B1D3CF448000645DB /* NetworkAvailability.swift */,
+			);
+			name = utils;
+			sourceTree = "<group>";
+		};
 		74992E751D369A080032A35F /* model */ = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +116,7 @@
 		74D4C0951D072D1A0010CD75 /* style-shaker */ = {
 			isa = PBXGroup;
 			children = (
+				748D7E7A1D3CF432000645DB /* utils */,
 				74992E791D369AA50032A35F /* custom-cells */,
 				74992E781D369A5C0032A35F /* controllers */,
 				74992E751D369A080032A35F /* model */,
@@ -194,6 +205,7 @@
 				74342CF91D354DF400EE9E4A /* MonStyleTableViewCell.swift in Sources */,
 				74992E7E1D36DC710032A35F /* WebViewController.swift in Sources */,
 				743CB5571D22B7360067BC08 /* MonMoodTableViewCell.swift in Sources */,
+				748D7E7C1D3CF448000645DB /* NetworkAvailability.swift in Sources */,
 				74D4C0971D072D1A0010CD75 /* AppDelegate.swift in Sources */,
 				746FBF401D0817800043F361 /* SettingsViewController.swift in Sources */,
 				74992E771D369A1A0032A35F /* Post.swift in Sources */,

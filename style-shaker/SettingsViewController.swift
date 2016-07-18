@@ -32,8 +32,12 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let controller: MonMoodViewController = segue.destinationViewController as! MonMoodViewController
-        controller.settings = self.settings
+        
+        if(segue.identifier == SETTINGS_TO_MOOD){
+            let controller: MonMoodViewController = segue.destinationViewController as! MonMoodViewController
+            controller.settings = self.settings
+        }
+        
         
     }
     
